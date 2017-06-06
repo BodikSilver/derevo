@@ -1,6 +1,10 @@
 = render partial: 'header'
-= render partial: 'mobile-menu'
+.row.hidden-sm.hidden-md.hidden-lg
+  .col-sm-12.wrapper-mobile-menu
+    = render partial: 'mobile-menu'
 .row
-  = render partial: 'content'
-  = render partial: 'side_bar'
+  .col-sm-8.col-md-9.wrapper-content
+    = render partial: 'content'
+  .col-sm-4.col-md-3.hidden-xs.wrapper-side-bar
+    = render partial: 'side_bar'
 = render partial: 'footer'
